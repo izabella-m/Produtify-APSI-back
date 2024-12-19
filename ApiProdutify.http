@@ -1,0 +1,6 @@
+@ApiProdutify_HostAddress = http://localhost:5053
+
+GET {{ApiProdutify_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
