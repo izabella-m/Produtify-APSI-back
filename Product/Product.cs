@@ -11,6 +11,7 @@ public class Product
     public int Stock { get; private set; }
     public string RandomCode { get; private set; }
 
+    // constructor
     public Product(string name, float price, string description, float promotionalPrice, string category, int stock, string randomCode)
     {
         Name = name;

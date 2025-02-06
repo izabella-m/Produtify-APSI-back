@@ -14,12 +14,13 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins", policy =>
     {
-        policy
-            .AllowAnyOrigin() // Permitir qualquer origem (Frontend)
-            .AllowAnyMethod() // Permitir qualquer método HTTP
-            .AllowAnyHeader(); // Permitir quaisquer cabeçalhos
+        policy.AllowAnyOrigin() // Permite qualquer origem
+            .AllowAnyMethod() // Permite qualquer método HTTP (GET, POST, etc.)
+            .AllowAnyHeader(); // Permite qualquer cabeçalho
     });
 });
+
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
